@@ -3,7 +3,8 @@ package com;
 import org.apache.commons.lang3.StringUtils;
 
 /**
- * Created by lenovo on  二月
+ * 测试运行。见test.com文件夹的测试类
+ * StringUtils中的方法大多是不会对null报空指针异常的。
  */
 public class StringUtilsDemo {
     public static void remove(){
@@ -26,6 +27,17 @@ public class StringUtilsDemo {
           }
           ;
     }
+
+    public static void equalsIgnoreCase(){
+        if(StringUtils.equalsIgnoreCase("abc","Abc")) {
+            System.out.println("第一组字符串忽略大小写是一样的");
+        }
+
+        if(StringUtils.equalsIgnoreCase("  ","")){
+            System.out.println("第二组字符串忽略大小写是一样的");
+        }
+    }
+
 
     public static void main(String[] args) {
 

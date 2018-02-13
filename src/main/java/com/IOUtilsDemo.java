@@ -18,7 +18,7 @@ public class IOUtilsDemo {
      * @param str
      * @param length
      */
-    public static void readTest(String str,int length){
+    public static void read(String str, int length){
         try{
             byte[] bytes = new byte[length];
             InputStream is = IOUtils.toInputStream(str);
