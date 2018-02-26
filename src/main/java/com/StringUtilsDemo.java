@@ -38,6 +38,12 @@ public class StringUtilsDemo {
         }
     }
 
+    public static void subString(){
+        String str="abcd";
+        String str1=StringUtils.substring(str,1,3);
+        System.out.println(str+"的中间字符是"+str1);
+
+    }
 
     public static void main(String[] args) {
 
