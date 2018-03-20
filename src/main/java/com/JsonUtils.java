@@ -18,6 +18,7 @@ public class JsonUtils {
     public static <T> String objectToJson(Object object){
         //将对象转化为Json数组
         JSONObject jsonObject= JSONObject.fromObject(object);
+        System.out.println(jsonObject.getString("age"));
         return  jsonObject.toString();
     }
 

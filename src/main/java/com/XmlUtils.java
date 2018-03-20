@@ -18,7 +18,7 @@ public class XmlUtils {
      * @param text   文本内容，类似 String text="<csdn><java>Java班</java><net>Net班</net></csdn>";
      * @throws Exception
      */
-         public void stringToXml(String text,String fileName) throws Exception {
+         public static void stringToXml(String text,String fileName) throws Exception {
               Document document= DocumentHelper.parseText(text);
               Element element=document.getRootElement();
               System.out.println(element.getName());
@@ -29,7 +29,7 @@ public class XmlUtils {
      * 把document对象写入xml文件中
      * @param document
      */
-    public void writeToXml(Document document,String fileName) throws Exception {
+    public static void writeToXml(Document document,String fileName) throws Exception {
 //        紧凑的格式
 //        OutputFormat format=OutputFormat.createCompactFormat();
 //         排版缩进的格式
@@ -48,7 +48,7 @@ public class XmlUtils {
      * @param fileName
      * @throws Exception
      */
-    public void createDocumentToXml(String fileName) throws  Exception{
+    public static void createDocumentToXml(String fileName) throws  Exception{
         Document document=DocumentHelper.createDocument();
         Element root=document.addElement("csdn");
         Element java=root.addElement("java");
@@ -62,7 +62,7 @@ public class XmlUtils {
      * 添加属性和数据到xml文件中
      * @param fileName
      */
-    public void addAttributeToXml(String fileName) throws Exception {
+    public  static void addAttributeToXml(String fileName) throws Exception {
         // 创建saxReader对象
         SAXReader reader = new SAXReader();
         // 通过read方法读取一个文件 转换成Document对象
@@ -88,7 +88,7 @@ public class XmlUtils {
      * @param fileName
      * @throws Exception
      */
-         public void getElementText(String fileName) throws  Exception{
+         public static  void getElementText(String fileName) throws  Exception{
              SAXReader saxReader=new SAXReader();
              //获取文件，转换成Document对象
              Document document=saxReader.read( new File(fileName));
@@ -101,7 +101,7 @@ public class XmlUtils {
      * 遍历当前节点元素下方的所有(元素)的子节点
      * @param node
      */
-    public void listNodes(Element node) {
+    public static  void listNodes(Element node) {
         System.out.println("当前节点的名称："+node.getName());
         List<Attribute> attributeList=node.attributes();
         System.out.println("节点的属性：");
@@ -126,7 +126,7 @@ public class XmlUtils {
      * @param names   标签组成的字符数组.比如 String[] names=new String[]{"西游记","作者"};
      * @throws Exception
      */
-    public void getXmlContent(String fileName,String[] names) throws  Exception {
+    public  static void getXmlContent(String fileName,String[] names) throws  Exception {
         SAXReader saxReader=new SAXReader();
         //获取文件，转换成Document对象
         Document document=saxReader.read( new File(fileName));
