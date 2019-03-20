@@ -1,6 +1,6 @@
-package test.com; 
+package com;
 
-import com.XmlUtils;
+import com.xml.XmlUtils;
 import org.junit.Test;
 import org.junit.Before; 
 import org.junit.After; 

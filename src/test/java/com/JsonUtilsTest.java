@@ -1,6 +1,6 @@
-package test.com; 
+package com;
 
-import com.JsonUtils;
+import com.json.JsonUtils;
 import com.bean.Person;
 import net.sf.json.JSONObject;
 import org.junit.Test;

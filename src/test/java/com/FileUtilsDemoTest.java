@@ -1,6 +1,6 @@
-package test.com; 
+package com;
 
-import com.FileUtilsDemo;
+import file.FileUtilsDemo;
 import org.junit.Test;
 import org.junit.Before; 
 import org.junit.After;

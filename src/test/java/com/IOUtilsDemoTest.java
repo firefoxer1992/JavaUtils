@@ -1,6 +1,6 @@
-package test.com; 
+package com;
 
-import com.IOUtilsDemo;
+import com.io.IOUtilsDemo;
 import org.junit.Test;
 import org.junit.Before; 
 import org.junit.After;

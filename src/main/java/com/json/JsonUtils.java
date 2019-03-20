@@ -1,4 +1,4 @@
-package com;
+package com.json;
 
 import net.sf.json.JSONArray;
 import net.sf.json.JSONObject;
@@ -6,7 +6,7 @@ import net.sf.json.JSONObject;
 import java.util.List;
 
 /**
- * Created by lenovo on  三月
+ * Json例子。
  */
 public class JsonUtils {
     /**

@@ -1,4 +1,4 @@
-package com;
+package com.xml;
 
 import org.dom4j.*;
 import org.dom4j.io.OutputFormat;

@@ -1,4 +1,4 @@
-package test.com; 
+package com;
 
 import com.PropertyUtil;
 import org.junit.Test;
