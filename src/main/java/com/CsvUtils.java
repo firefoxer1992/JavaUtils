@@ -23,7 +23,7 @@ public class CsvUtils {
      * @param outPutPath
      * @param filename
      */
-    public static void createCSVFile(String[] heads, List<Object[]> rows, String outPutPath, String filename)
+    public static void createCsvFile(String[] heads, List<Object[]> rows, String outPutPath, String filename)
     {
 
         // CsvWriter (and all other file writers) work with an instance of
@@ -64,7 +64,7 @@ public class CsvUtils {
      * @return
      * @throws IOException
      */
-    public static List<String[]> ReadCSV(String filePath) throws IOException {
+    public static List<String[]> readCsv(String filePath) throws IOException {
 //        List<Object> eslImports = new ArrayList<Object>();
         File file = new File(filePath);
         InputStream in = new FileInputStream(file);
